@@ -35,10 +35,8 @@ Resulted in a sparse high-dimensional document-term matrix
 
 </div>
 
-## 🔬 Hyperparameter Tuning
-- Adjusted max_depth, alpha, C, etc., using GridSearchCV
-- Achieved improvement to ~99% accuracy (check for overfitting!)
-- Validated via confusion matrix and learning curves
+## 🔬 Conclusion
+That with the Shopee Review dataset from Google Playstore, it can experience overfitting because with 3 sentiment classes (positive, negative, and neutral) experiencing *data imbalance* so a method is needed so that the model is not dominant in the majority data. So I use **SMOTE** to do *oversampling*. This is reflected when all combinations are run without oversampling and all experience *overfitting* which is reflected in the accuracy of the testing data being more stagnant than the accuracy of the testing data. Then I determined the 3 best combinations from 12 combinations, namely TF-IDF + LSTM, TF-IDF + GRU, and N-gram + LSTM. Of these three combinations, when SMOTE was performed and optimization by finding the right hyperparameters was found to be the best in the **TF-IDF + GRU** combination where the results had **accuracy above 92%** aka **92.1%**. Then I found insight that actually my dataset is very simple so that using Multi Layer Perceptron + Optuna (to find the best parameters) has obtained accuracy above 92%. Therefore, for sentiment analysis projects, it seems unnecessary to use a deep learning algorithm that is too complex if the data is simple. Simply using a multilayer perceptron with a little optimization can already find high accuracy.
 
 ## 📊 Error Analysis
 Identified common misclassifications (sarcasm, mixed sentiments, domain-specific slang). Learned preprocessing and model tuning could better handle these nuances
