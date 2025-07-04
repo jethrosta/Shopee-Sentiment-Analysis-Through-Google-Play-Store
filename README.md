@@ -33,6 +33,11 @@ While multiple complex deep learning architectures were tested, a key finding wa
 
   **Finding**: After hyperparameter tuning with Optuna, a relatively simple Multilayer Perceptron (MLP) model achieved an accuracy of over 92%. This was comparable to the best-performing complex model, a GRU (Gated Recurrent Unit) with TF-IDF features (92.1% accuracy).
 
+<div align="center">
+  <img src="https://github.com/jethrosta/Shopee-Sentiment-Analysis-Through-Google-Play-Store/blob/main/images/maxresdefault.jpg">
+  <img src="https://github.com/user-attachments/assets/f6c85501-cec8-451b-bb25-c38b9944005d">
+</div>
+
 ## ⚙️ Analytical Workflow & Methodology
 ### 1. Data Collection
 - Source: Google Play Store
