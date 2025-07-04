@@ -1,4 +1,4 @@
-# Shopee Customer Sentiment Analysis from Google Play Store Reviews
+# 🟧 Shopee Customer Sentiment Analysis from Google Play Store Reviews
 
 <div>
   <img src = "https://github.com/jethrosta/Shopee-Sentiment-Analysis-Through-Google-Play-Store/blob/main/images/wordCloud.png">
